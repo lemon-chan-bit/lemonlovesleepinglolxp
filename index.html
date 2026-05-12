@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>翻牌記憶小遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="header">
+      <h1>翻牌記憶小遊戲</h1>
+      <p>找出所有配對，挑戰自己的記憶力！</p>
+    </header>
+
+    <section class="controls">
+      <div>
+        <span>步數：</span><strong id="moveCount">0</strong>
+      </div>
+      <div>
+        <span>配對：</span><strong id="matchCount">0</strong>/8
+      </div>
+      <button id="restartButton" type="button">重新開始</button>
+    </section>
+
+    <section class="board" id="gameBoard" aria-label="翻牌記憶遊戲棋盤"></section>
+
+    <section class="message hidden" id="messageBox">
+      <p id="messageText"></p>
+      <button id="playAgainButton" type="button">再玩一次</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
